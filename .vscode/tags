@@ -4,11 +4,11 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-arguments	../zptfyls.py	/^    arguments = docopt(__doc__)$/;"	kind:variable	line:8
-docopt	../zptfyls.py	/^from docopt import docopt$/;"	kind:namespace	line:4
-results	../zptfyls.py	/^results = spotipy.current_user_playlists()$/;"	kind:variable	line:16
-spotipy	../zptfyls.py	/^import spotipy$/;"	kind:namespace	line:5
-spotipy	../zptfyls.py	/^spotipy = spotipy.Spotify(auth=token)$/;"	kind:variable	line:15
-token	../zptfyls.py	/^token = arguments['OAUTHTOKEN']$/;"	kind:variable	line:11
-username	../zptfyls.py	/^username = arguments['USERNAME']$/;"	kind:variable	line:10
+DocoptExit	../zptfyls.py	/^from docopt import docopt, DocoptExit$/;"	kind:namespace	line:8
+arguments	../zptfyls.py	/^    arguments = docopt(__doc__)$/;"	kind:variable	line:12
+docopt	../zptfyls.py	/^from docopt import docopt, DocoptExit$/;"	kind:namespace	line:8
+results	../zptfyls.py	/^results = spotipy.current_user_playlists()$/;"	kind:variable	line:19
+spotipy	../zptfyls.py	/^import spotipy$/;"	kind:namespace	line:9
+spotipy	../zptfyls.py	/^spotipy = spotipy.Spotify(auth=token)$/;"	kind:variable	line:18
+token	../zptfyls.py	/^token = arguments['OAUTHTOKEN']$/;"	kind:variable	line:14
 zptfyls.py	../zptfyls.py	1;"	kind:file	line:1
