@@ -7,8 +7,10 @@
 DocoptExit	../zptfyls.py	/^from docopt import docopt, DocoptExit$/;"	kind:namespace	line:8
 arguments	../zptfyls.py	/^    arguments = docopt(__doc__)$/;"	kind:variable	line:12
 docopt	../zptfyls.py	/^from docopt import docopt, DocoptExit$/;"	kind:namespace	line:8
-results	../zptfyls.py	/^results = spotipy.current_user_playlists()$/;"	kind:variable	line:19
+list_playlist	../zptfyls.py	/^def list_playlist(playlist):$/;"	kind:function	line:23
+result	../zptfyls.py	/^result = spotipy.current_user_playlists()$/;"	kind:variable	line:18
 spotipy	../zptfyls.py	/^import spotipy$/;"	kind:namespace	line:9
-spotipy	../zptfyls.py	/^spotipy = spotipy.Spotify(auth=token)$/;"	kind:variable	line:18
+spotipy	../zptfyls.py	/^spotipy = spotipy.Spotify(auth=token)$/;"	kind:variable	line:17
 token	../zptfyls.py	/^token = arguments['OAUTHTOKEN']$/;"	kind:variable	line:14
+username	../zptfyls.py	/^username = arguments['USERNAME']$/;"	kind:variable	line:15
 zptfyls.py	../zptfyls.py	1;"	kind:file	line:1
