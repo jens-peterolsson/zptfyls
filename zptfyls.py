@@ -32,7 +32,7 @@ while total >= offset:
 
     if total == 0:
         total = result['total']
-        if(is_html):
+        if is_html:
             print('<html><body><table>')
 
     for playlist in result['items']:
