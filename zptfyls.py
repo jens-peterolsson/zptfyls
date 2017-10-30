@@ -9,7 +9,7 @@ and selecting the green button that says "GET OAUTH TOKEN"!
 
 from docopt import docopt
 import spotipy
-import zptfyReader
+import zptfy_reader
 
 if __name__ == '__main__':
     arguments = docopt(__doc__)
@@ -23,7 +23,7 @@ spotipy = spotipy.Spotify(auth=token)
 offset = 0
 total = 0
 
-isHtml = output.lower() == 'html'
+is_html = output.lower() == 'html'
 
 while total >= offset:
 
@@ -32,18 +32,18 @@ while total >= offset:
 
     if total == 0:
         total = result['total']
-        if(isHtml):
+        if(is_html):
             print('<html><body><table>')
 
     for playlist in result['items']:
-        if isHtml:
-            zptfyReader.list_playlist_html(username, spotipy, playlist)
+        if is_html:
+            zptfy_reader.list_playlist_html(username, spotipy, playlist)
         else:
-            zptfyReader.list_playlist_text(username, spotipy, playlist)
+            zptfy_reader.list_playlist_text(username, spotipy, playlist)
 
 print('')
 print('Total no of playlists: ' + str(total))
 print('')
 
-if isHtml:
+if is_html:
     print('</table></body></html>')
